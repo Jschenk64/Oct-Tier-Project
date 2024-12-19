@@ -29,6 +29,10 @@ output "load_balancer_arn" {
   value       = aws_lb.app_lb.arn
 }
 
+output "db_password" {
+  value     = aws_db_instance.rds_instance.password
+  sensitive = true
+}
 
 
 
