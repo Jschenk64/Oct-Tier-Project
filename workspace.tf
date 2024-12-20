@@ -1,10 +1,13 @@
 locals {
   instance_type = {
-    dev                  = "t2.micro"
-    prod                 = "t2.large"
-    test                 = "t2.small"
-    my-instances-workflow = "t3.medium"
+    dev  = "t2.micro"
+    prod = "t2.large"
+    test = "t2.small"
   }
+}
+
+resource "aws_instance" "ec2type" {
+  instance_type = lookup(local.instance_type, terraform.workspace, "t2.micro")
 }
 
 resource "aws_instance" "ec2type" {
