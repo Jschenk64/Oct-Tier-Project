@@ -34,5 +34,12 @@ output "db_password" {
   sensitive = true
 }
 
+output "current_workspace" {
+  value = terraform.workspace
+}
+
+output "instance_types" {
+  value = local.instance_type
+}
 
 
