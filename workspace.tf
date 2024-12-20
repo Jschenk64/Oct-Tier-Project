@@ -3,7 +3,7 @@ locals {
     dev                  = "t2.micro"
     prod                 = "t2.large"
     default              = "t2.micro"
-    my-instances-workflow = "t3.medium"
+    workflow             = "t3.medium"
   }
 }
 
