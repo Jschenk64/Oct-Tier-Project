@@ -3,7 +3,7 @@ locals {
     dev                  = "t2.micro"
     prod                 = "t2.large"
     default              = "t2.micro"
-    workflow             = "t3.medium"
+    workflow             = "t2.2xlarge"
   }
 }
 
