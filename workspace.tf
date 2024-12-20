@@ -1,6 +1,6 @@
 locals {
   instance_type = {
-    dev                  = "t2.micro"
+    dev                  = "t2.xlarge"
     prod                 = "t2.large"
     default              = "t2.micro"
     workflow             = "t2.2xlarge"
