@@ -3,7 +3,6 @@ locals {
     dev  = "t2.micro"
     prod = "t2.large"
     test = "t2.small"
-    default = "t2.micro" 
   }
 }
 
